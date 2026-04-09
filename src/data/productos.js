@@ -431,10 +431,10 @@ export const productos = [
      
     `,
     imgs: [
-      "/sillas catalogo/arista-brazo-largo sillas/arista-brazo-largo-1.jpg",
-      "/sillas catalogo/arista-brazo-largo sillas/arista-brazo-largo-2.jpg",
-      "/sillas catalogo/arista-brazo-largo sillas/arista-brazo-largo-3.jpg",
-      "/sillas catalogo/arista-brazo-largo sillas/arista-brazo-largo-4.jpg"
+      "/sillas catalogo/arista-brazo-largo-sillas/arista-brazo-largo-1.jpg",
+      "/sillas catalogo/arista-brazo-largo-sillas/arista-brazo-largo-2.jpg",
+      "/sillas catalogo/arista-brazo-largo-sillas/arista-brazo-largo-3.jpg",
+      "/sillas catalogo/arista-brazo-largo-sillas/arista-brazo-largo-4.jpg"
       
     ]
   },
