@@ -234,10 +234,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/rivera-especial-sillas/rivera-especial 1.jpg",
-      "/sillas catalogo/rivera-especial-sillas/rivera-especial 2.jpg",
-      "/sillas catalogo/rivera-especial-sillas/rivera-especial 3.jpg",
-      "/sillas catalogo/rivera-especial-sillas/rivera-especial 4.jpg",
+      "/sillas catalogo/rivera-especial-sillas/rivera-especial-1.jpg",
+      "/sillas catalogo/rivera-especial-sillas/rivera-especial-2.jpg",
+      "/sillas catalogo/rivera-especial-sillas/rivera-especial-3.jpg",
+      "/sillas catalogo/rivera-especial-sillas/rivera-especial-4.jpg",
     ]
   },
   {
