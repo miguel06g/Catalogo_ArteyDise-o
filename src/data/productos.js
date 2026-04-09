@@ -363,10 +363,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Jane especial sillas/jane especial 1.jpg",
-      "/sillas catalogo/Jane especial sillas/jane especial 2.jpg",
-      "/sillas catalogo/Jane especial sillas/jane especial 3.jpg",
-      "/sillas catalogo/Jane especial sillas/jane especial 4.jpg"
+      "/sillas catalogo/jane-especial-sillas/jane-especial-1.jpg",
+      "/sillas catalogo/jane-especial-sillas/jane-especial-2.jpg",
+      "/sillas catalogo/jane-especial-sillas/jane-especial-3.jpg",
+      "/sillas catalogo/jane-especial-sillas/jane-especial-4.jpg"
       
     ]
   },
@@ -380,10 +380,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Jane sillas/jane 1.jpg",
-      "/sillas catalogo/Jane sillas/jane 2.jpg",
-      "/sillas catalogo/Jane sillas/jane 3.jpg",
-      "/sillas catalogo/Jane sillas/jane 4.jpg"
+      "/sillas catalogo/jane-sillas/jane-1.jpg",
+      "/sillas catalogo/jane-sillas/jane-2.jpg",
+      "/sillas catalogo/jane-sillas/jane-3.jpg",
+      "/sillas catalogo/jane-sillas/jane-4.jpg"
     ]
   },
   {
@@ -396,10 +396,10 @@ export const productos = [
      
     `,
     imgs: [
-      "/sillas catalogo/Odesa slim sillas/odesa slim 1.jpg",
-      "/sillas catalogo/Odesa slim sillas/odesa slim 2.jpg",
-      "/sillas catalogo/Odesa slim sillas/odesa slim 3.jpg",
-      "/sillas catalogo/Odesa slim sillas/odesa slim 4.jpg"
+      "/sillas catalogo/odesa-slim-sillas/odesa-slim-1.jpg",
+      "/sillas catalogo/odesa-slim-sillas/odesa-slim-2.jpg",
+      "/sillas catalogo/odesa-slim-sillas/odesa-slim-3.jpg",
+      "/sillas catalogo/odesa-slim-sillas/odesa-slim-4.jpg"
       
     ]
   },
@@ -431,10 +431,10 @@ export const productos = [
      
     `,
     imgs: [
-      "/sillas catalogo/Arista brazo largo sillas/arista brazo largo 1.jpg",
-      "/sillas catalogo/Arista brazo largo sillas/arista brazo largo 2.jpg",
-      "/sillas catalogo/Arista brazo largo sillas/arista brazo largo 3.jpg",
-      "/sillas catalogo/Arista brazo largo sillas/arista brazo largo 4.jpg" 
+      "/sillas catalogo/arista-brazo-largo sillas/arista-brazo-largo-1.jpg",
+      "/sillas catalogo/arista-brazo-largo sillas/arista-brazo-largo-2.jpg",
+      "/sillas catalogo/arista-brazo-largo sillas/arista-brazo-largo-3.jpg",
+      "/sillas catalogo/arista-brazo-largo sillas/arista-brazo-largo-4.jpg"
       
     ]
   },
@@ -448,10 +448,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Arista especial sillas/arista especial 1.jpg",
-      "/sillas catalogo/Arista especial sillas/arista especial 2.jpg",
-      "/sillas catalogo/Arista especial sillas/arista especial 3.jpg",
-      "/sillas catalogo/Arista especial sillas/arista especial 4.jpg"
+      "/sillas catalogo/arista-especial-sillas/arista-especial-1.jpg",
+      "/sillas catalogo/arista-especial-sillas/arista-especial-2.jpg",
+      "/sillas catalogo/arista-especial-sillas/arista-especial-3.jpg",
+      "/sillas catalogo/arista-especial-sillas/arista-especial-4.jpg"
 
     ]
   },
@@ -465,10 +465,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Cimarro sillas/cimarro 1.jpg",
-      "/sillas catalogo/Cimarro sillas/cimarro 2.jpg",
-      "/sillas catalogo/Cimarro sillas/cimarro 3.jpg",
-      "/sillas catalogo/Cimarro sillas/cimarro 4.jpg"
+      "/sillas catalogo/cimarro-sillas/cimarro-1.jpg",
+      "/sillas catalogo/cimarro-sillas/cimarro-2.jpg",
+      "/sillas catalogo/cimarro-sillas/cimarro-3.jpg",
+      "/sillas catalogo/cimarro-sillas/cimarro-4.jpg"
     ]
   },
   {
@@ -485,10 +485,10 @@ export const productos = [
       </ul>
     `,
     imgs: [
-      "/sillas catalogo/Cimarro especial sillas/cimarro especial 1.jpg",
-      "/sillas catalogo/Cimarro especial sillas/cimarro especial 2.jpg",
-      "/sillas catalogo/Cimarro especial sillas/cimarro especial 3.jpg",
-      "/sillas catalogo/Cimarro especial sillas/cimarro especial 4.jpg"
+      "/sillas catalogo/cimarro-especial-sillas/cimarro-especial-1.jpg",
+      "/sillas catalogo/cimarro-especial-sillas/cimarro-especial-2.jpg",
+      "/sillas catalogo/cimarro-especial-sillas/cimarro-especial-3.jpg",
+      "/sillas catalogo/cimarro-especial-sillas/cimarro-especial-4.jpg"
       
     ]
   },
@@ -502,10 +502,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Roche original sillas/roche original 1.jpg",
-      "/sillas catalogo/Roche original sillas/roche original 2.jpg",
-      "/sillas catalogo/Roche original sillas/roche original 3.jpg",
-      "/sillas catalogo/Roche original sillas/roche original 4.jpg"
+      "/sillas catalogo/roche-original-sillas/roche-original-1.jpg",
+      "/sillas catalogo/roche-original-sillas/roche-original-2.jpg",
+      "/sillas catalogo/roche-original-sillas/roche-original-3.jpg",
+      "/sillas catalogo/roche-original-sillas/roche-original-4.jpg"
       
     ]
   },
@@ -519,10 +519,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Roche especial sillas/roche especial 1.jpg",
-      "/sillas catalogo/Roche especial sillas/roche especial 2.jpg",
-      "/sillas catalogo/Roche especial sillas/roche especial 3.jpg",
-      "/sillas catalogo/Roche especial sillas/roche especial 4.jpg"
+      "/sillas catalogo/roche-especial-sillas/roche-especial-1.jpg",
+      "/sillas catalogo/roche-especial-sillas/roche-especial-2.jpg",
+      "/sillas catalogo/roche-especial-sillas/roche-especial-3.jpg",
+      "/sillas catalogo/roche-especial-sillas/roche-especial-4.jpg"
       
     ]
   },
@@ -536,10 +536,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Zientte sillas/zientte 1.jpg",
-      "/sillas catalogo/Zientte sillas/zientte 2.jpg",
-      "/sillas catalogo/Zientte sillas/zientte 3.jpg",
-      "/sillas catalogo/Zientte sillas/zientte 4.jpg"
+      "/sillas catalogo/zientte-sillas/zientte-1.jpg",
+      "/sillas catalogo/zientte-sillas/zientte-2.jpg",
+      "/sillas catalogo/zientte-sillas/zientte-3.jpg",
+      "/sillas catalogo/zientte-sillas/zientte-4.jpg"
 
     ]
   },
@@ -553,10 +553,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Luxe 3x2 sillas/luxe 3x2 1.jpg",
-      "/sillas catalogo/Luxe 3x2 sillas/luxe 3x2 2.jpg",
-      "/sillas catalogo/Luxe 3x2 sillas/luxe 3x2 3.jpg",
-      "/sillas catalogo/Luxe 3x2 sillas/luxe 3x2 4.jpg"
+      "/sillas catalogo/luxe-3x2-sillas/luxe-3x2-1.jpg",
+      "/sillas catalogo/luxe-3x2-sillas/luxe-3x2-2.jpg",
+      "/sillas catalogo/luxe-3x2-sillas/luxe-3x2-3.jpg",
+      "/sillas catalogo/luxe-3x2-sillas/luxe-3x2-4.jpg"
       
     ]
   },
@@ -574,10 +574,10 @@ export const productos = [
       </ul>
     `,
     imgs: [
-      "/sillas catalogo/Eames sillas/eames 1.jpg",
-      "/sillas catalogo/Eames sillas/eames 2.jpg",
-      "/sillas catalogo/Eames sillas/eames 3.jpg",
-      "/sillas catalogo/Eames sillas/eames 4.jpg"
+      "/sillas catalogo/eames-sillas/eames-1.jpg",
+      "/sillas catalogo/eames-sillas/eames-2.jpg",
+      "/sillas catalogo/eames-sillas/eames-3.jpg",
+      "/sillas catalogo/eames-sillas/eames-4.jpg"
     ]
   },
   {
@@ -590,10 +590,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Cabaret sillas/cabaret 1.jpg",
-      "/sillas catalogo/Cabaret sillas/cabaret 2.jpg",
-      "/sillas catalogo/Cabaret sillas/cabaret 3.jpg",
-      "/sillas catalogo/Cabaret sillas/cabaret 4.jpg"
+      "/sillas catalogo/cabaret-sillas/cabaret-1.jpg",
+      "/sillas catalogo/cabaret-sillas/cabaret-2.jpg",
+      "/sillas catalogo/cabaret-sillas/cabaret-3.jpg",
+      "/sillas catalogo/cabaret-sillas/cabaret-4.jpg"
     ]
   },
   {
@@ -610,10 +610,10 @@ export const productos = [
       </ul>
     `,
     imgs: [
-      "/sillas catalogo/Miranda sillas/miranda 1.jpg",
-      "/sillas catalogo/Miranda sillas/miranda 2.jpg",  
-      "/sillas catalogo/Miranda sillas/miranda 3.jpg",
-      "/sillas catalogo/Miranda sillas/miranda 4.jpg"
+      "/sillas catalogo/miranda-sillas/miranda-1.jpg",
+      "/sillas catalogo/miranda-sillas/miranda-2.jpg",
+      "/sillas catalogo/miranda-sillas/miranda-3.jpg",
+      "/sillas catalogo/miranda-sillas/miranda-4.jpg"
     ]
   },
   {
@@ -626,10 +626,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Owens sillas/ownes 1.jpg",
-      "/sillas catalogo/Owens sillas/ownes 2.jpg",
-      "/sillas catalogo/Owens sillas/ownes 3.jpg",
-      "/sillas catalogo/Owens sillas/ownes 4.jpg"
+      "/sillas catalogo/owens-sillas/ownes-1.jpg",
+      "/sillas catalogo/owens-sillas/ownes-2.jpg",
+      "/sillas catalogo/owens-sillas/ownes-3.jpg",
+      "/sillas catalogo/owens-sillas/ownes-4.jpg"
     ]
   },
   {
@@ -642,10 +642,10 @@ export const productos = [
      
     `,
     imgs: [
-      "/sillas catalogo/Swing sillas/swing 1.jpg",
-      "/sillas catalogo/Swing sillas/swing 2.jpg",
-      "/sillas catalogo/Swing sillas/swing 3.jpg",
-      "/sillas catalogo/Swing sillas/swing 4.jpg"
+      "/sillas catalogo/swing-sillas/swing-1.jpg",
+      "/sillas catalogo/swing-sillas/swing-2.jpg",
+      "/sillas catalogo/swing-sillas/swing-3.jpg",
+      "/sillas catalogo/swing-sillas/swing-4.jpg"
     ]
   },
   {
@@ -658,10 +658,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Qatar sillas/qatar 1.jpg",
-      "/sillas catalogo/Qatar sillas/qatar 2.jpg",
-      "/sillas catalogo/Qatar sillas/qatar 3.jpg",
-      "/sillas catalogo/Qatar sillas/qatar 4.jpg"
+      "/sillas catalogo/qatar-sillas/qatar-1.jpg",
+      "/sillas catalogo/qatar-sillas/qatar-2.jpg",
+      "/sillas catalogo/qatar-sillas/qatar-3.jpg",
+      "/sillas catalogo/qatar-sillas/qatar-4.jpg"
     ]
   },
   {
@@ -678,10 +678,10 @@ export const productos = [
       </ul>
     `,
     imgs: [
-      "/sillas catalogo/Suiza sillas/suiza 1.jpg",
-      "/sillas catalogo/Suiza sillas/suiza 2.jpg",
-      "/sillas catalogo/Suiza sillas/suiza 3.jpg",
-      "/sillas catalogo/Suiza sillas/suiza 4.jpg"
+      "/sillas catalogo/suiza-sillas/suiza-1.jpg",
+      "/sillas catalogo/suiza-sillas/suiza-2.jpg",
+      "/sillas catalogo/suiza-sillas/suiza-3.jpg",
+      "/sillas catalogo/suiza-sillas/suiza-4.jpg"
     ]
   },
   {
@@ -694,9 +694,9 @@ export const productos = [
      
     `,
     imgs: [
-      "/sillas catalogo/Oval comedores/oval 1.jpg",
-      "/sillas catalogo/Oval comedores/oval 2.jpg",
-      "/sillas catalogo/Oval comedores/oval 3.jpg",
+      "/sillas catalogo/oval-comedores/oval-1.jpg",
+      "/sillas catalogo/oval-comedores/oval-2.jpg",
+      "/sillas catalogo/oval-comedores/oval-3.jpg",
       
     ]
   },
@@ -710,11 +710,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Olmo sillas/olmo 1.jpg",
-      "/sillas catalogo/Olmo sillas/olmo 2.jpg",
-      "/sillas catalogo/Olmo sillas/olmo 3.jpg",
-      "/sillas catalogo/Olmo sillas/olmo 4.jpg"
-      
+      "/sillas catalogo/olmo-sillas/olmo-1.jpg",
+      "/sillas catalogo/olmo-sillas/olmo-2.jpg",
+      "/sillas catalogo/olmo-sillas/olmo-3.jpg",
+      "/sillas catalogo/olmo-sillas/olmo-4.jpg",
     ]
   },
   {
@@ -727,10 +726,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Olmo 3x2 sillas/olmo 3x2 1.jpg",
-      "/sillas catalogo/Olmo 3x2 sillas/olmo 3x2 2.jpg",
-      "/sillas catalogo/Olmo 3x2 sillas/olmo 3x2 3.jpg",
-      "/sillas catalogo/Olmo 3x2 sillas/olmo 3x2 4.jpg"
+      "/sillas catalogo/olmo-3x2-sillas/olmo-3x2-1.jpg",
+      "/sillas catalogo/olmo-3x2-sillas/olmo-3x2-2.jpg",
+      "/sillas catalogo/olmo-3x2-sillas/olmo-3x2-3.jpg",
+      "/sillas catalogo/olmo-3x2-sillas/olmo-3x2-4.jpg",
       
     ]
   },
@@ -744,10 +743,10 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Stanford sillas/stanford 1.jpg",
-      "/sillas catalogo/Stanford sillas/stanford 2.jpg",
-      "/sillas catalogo/Stanford sillas/stanford 3.jpg",
-      "/sillas catalogo/Stanford sillas/stanford 4.jpg"
+      "/sillas catalogo/stanford-sillas/stanford-1.jpg",
+      "/sillas catalogo/stanford-sillas/stanford-2.jpg",
+      "/sillas catalogo/stanford-sillas/stanford-3.jpg",
+      "/sillas catalogo/stanford-sillas/stanford-4.jpg",
 
     ]
   },
@@ -761,10 +760,10 @@ export const productos = [
      
     `,
     imgs: [
-      "/sillas catalogo/Prestige especial sillas/prestige especial 1.jpg",
-      "/sillas catalogo/Prestige especial sillas/prestige especial 2.jpg",
-      "/sillas catalogo/Prestige especial sillas/prestige especial 3.jpg",
-      "/sillas catalogo/Prestige especial sillas/prestige especial 4.jpg"
+      "/sillas catalogo/prestige-especial-sillas/prestige-especial-1.jpg",
+      "/sillas catalogo/prestige-especial-sillas/prestige-especial-2.jpg",
+      "/sillas catalogo/prestige-especial-sillas/prestige-especial-3.jpg",
+      "/sillas catalogo/prestige-especial-sillas/prestige-especial-4.jpg",
 
     ]
   },
@@ -782,9 +781,9 @@ export const productos = [
       </ul>
     `,
     imgs: [
-      "/sillas catalogo/Prestige original comedores/Prestige original com 1.jpg",
-      "/sillas catalogo/Prestige original comedores/Prestige original com 2.jpg",
-      "/sillas catalogo/Prestige original comedores/Prestige original com 3.jpg",
+      "/sillas catalogo/prestige-original-comedores/prestige-original-com-1.jpg",
+      "/sillas catalogo/prestige-original-comedores/prestige-original-com-2.jpg",
+      "/sillas catalogo/prestige-original-comedores/prestige-original-com-3.jpg",
     ]
   },
   {
@@ -797,10 +796,11 @@ export const productos = [
       
     `,
     imgs: [
-      "/sillas catalogo/Prestige original sillas/prestige original silla 1.jpg",
-      "/sillas catalogo/Prestige original sillas/prestige original silla 2.jpg",
-      "/sillas catalogo/Prestige original sillas/prestige original silla 3.jpg",
-      "/sillas catalogo/Prestige original sillas/prestige original silla 4.jpg",
+      "/sillas catalogo/prestige-original-sillas/prestige-original-silla-1.jpg",
+      "/sillas catalogo/prestige-original-sillas/prestige-original-silla-2.jpg",  
+      "/sillas catalogo/prestige-original-sillas/prestige-original-silla-3.jpg",
+      "/sillas catalogo/prestige-original-sillas/prestige-original-silla-4.jpg",
+      
 
     ]
   },
@@ -818,10 +818,10 @@ export const productos = [
       </ul>
     `,
     imgs: [
-      "/sillas catalogo/Magis sillas/magis 1.jpg",
-      "/sillas catalogo/Magis sillas/magis 2.jpg",
-      "/sillas catalogo/Magis sillas/magis 3.jpg",
-      "/sillas catalogo/Magis sillas/magis 4.jpg",
+      "/sillas catalogo/magis-sillas/magis-1.jpg",
+      "/sillas catalogo/magis-sillas/magis-2.jpg",
+      "/sillas catalogo/magis-sillas/magis-3.jpg",
+      "/sillas catalogo/magis-sillas/magis-4.jpg",
 
     ]
   },
@@ -836,10 +836,10 @@ export const productos = [
      
     `,
     imgs: [
-      "/sillas catalogo/Gondola especial sillas/gondola especial 1.jpg",
-      "/sillas catalogo/Gondola especial sillas/gondola especial 2.jpg",
-      "/sillas catalogo/Gondola especial sillas/gondola especial 3.jpg",
-      "/sillas catalogo/Gondola especial sillas/gondola especial 4.jpg",
+      "/sillas catalogo/gondola-especial-sillas/gondola-especial-1.jpg",
+      "/sillas catalogo/gondola-especial-sillas/gondola-especial-2.jpg",
+      "/sillas catalogo/gondola-especial-sillas/gondola-especial-3.jpg",
+      "/sillas catalogo/gondola-especial-sillas/gondola-especial-4.jpg",
     ]
   },
 
@@ -857,10 +857,10 @@ export const productos = [
       </ul>
     `,
     imgs: [
-      "/sillas catalogo/Gondola sillas/gondola 1.jpg",
-      "/sillas catalogo/Gondola sillas/gondola 2.jpg",
-      "/sillas catalogo/Gondola sillas/gondola 3.jpg",
-      "/sillas catalogo/Gondola sillas/gondola 4.jpg",
+      "/sillas catalogo/gondola-sillas/gondola-1.jpg",
+      "/sillas catalogo/gondola-sillas/gondola-2.jpg",
+      "/sillas catalogo/gondola-sillas/gondola-3.jpg",
+      "/sillas catalogo/gondola-sillas/gondola-4.jpg",
      
     ]
   },
