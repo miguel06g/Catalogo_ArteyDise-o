@@ -1,0 +1,1645 @@
+/* ======================
+   RESET + VARIABLES
+====================== */
+
+:root {
+  --bg-main: #0b0b0b;
+  --bg-card: #141414;
+  --gold: #c9a44c;
+  --text-main: #f5f5f5;
+  --text-muted: #b5b5b5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  body {
+  margin: 0;
+  padding: 0;
+  /* Degradado que simula iluminación de estudio */
+  background: radial-gradient(circle at 50% -20%, #222 0%, #050505 80%);
+  background-attachment: fixed; /* Esto crea el efecto base de parallax */
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Esto asegura que el fondo sea negro en cualquier navegador */
+body {
+    background-color: #0b0b0b !important;
+    color: #ffffff !important;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Ajuste para que la sección de productos resalte */
+.catalogo-container, #productos {
+    background-color: #0b0b0b !important;
+}
+
+/* Ajuste para los botones de categorías (los que se ven claritos en Chrome) */
+.category-btn {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: #c9a44c !important;
+    border: 1px solid #c9a44c !important;
+}
+
+.category-btn.active {
+    background: #c9a44c !important;
+    color: #000 !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+  opacity: 0.1; /* Muy sutil */
+  z-index: -1;
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* ======================
+   HEADER
+====================== */
+header {
+  background: rgba(10, 10, 10, 0.85); /* Fondo semi-transparente premium */
+  backdrop-filter: blur(15px); /* Efecto Glassmorphism */
+  padding: 20px 8%; 
+  position: sticky;
+  top: 0;
+  z-index: 9999; /* Asegura estar por encima de todo, incluso del parallax */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(201, 164, 76, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor del Logo */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.02);
+}
+
+.brand-icon {
+  color: var(--gold);
+  font-size: 1.8rem;
+  margin-right: 15px;
+  filter: drop-shadow(0 0 8px rgba(201, 164, 76, 0.5));
+}
+
+/* Efecto de Oro Animado en el Nombre */
+.brand-main {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background: linear-gradient(
+    to right, 
+    #bf953f 20%, 
+    #fcf6ba 40%, 
+    #b38728 60%, 
+    #fcf6ba 80%, 
+    #bf953f 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shineGold 5s linear infinite; /* Animación de reflejo metálico */
+}
+
+.brand-sub {
+  display: block;
+  font-size: 10px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: -5px;
+  opacity: 0.8;
+}
+
+@keyframes shineGold {
+  to { background-position: 200% center; }
+}
+
+header nav a {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.4s;
+  position: relative;
+}
+
+header nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background: var(--gold);
+  transition: 0.3s;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
+header nav a:hover {
+  color: var(--gold);
+  text-shadow: 0 0 10px rgba(201, 164, 76, 0.5);
+}
+
+/* ======================
+   TITULOS
+====================== */
+
+
+.section-title {
+  text-align: center;
+  margin: 100px 0 60px; /* Más espacio arriba para que respire */
+  padding: 0 20px;
+}
+
+.section-title h2 {
+  /* Tamaño mucho más grande y elegante */
+  font-size: 4.5rem; 
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px; /* Espaciado entre letras premium */
+  margin: 0;
+  
+  /* EFECTO DORADO: Usamos un degradado lineal */
+  background: linear-gradient(
+    to right, 
+    #bf953f, 
+    #fcf6ba, 
+    #b38728, 
+    #fbf5b7, 
+    #aa771c
+  );
+  -webkit-background-clip: text; /* Corta el fondo con la forma del texto */
+  -webkit-text-fill-color: transparent; /* Hace el texto transparente para ver el fondo */
+  filter: drop-shadow(0 15px 15px rgba(0,0,0,0.8));  
+  position: relative;
+  display: inline-block;
+}
+
+/* Subtítulo o línea decorativa */
+.section-title h2::after {
+  content: "";
+  display: block;
+  width: 60%; /* Línea más corta que el texto para elegancia */
+  height: 2px;
+  background: var(--gold);
+  margin: 15px auto 0;
+  opacity: 0.6;
+  /* Animación sutil de brillo en la línea */
+  box-shadow: 0 0 10px var(--gold);
+}
+
+/* Pequeño texto superior opcional (estilo boutique) */
+.section-title::before {
+  content: "Colección Exclusiva";
+  display: block;
+  font-size: 0.9rem;
+  color: var(--gold);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Ajuste Responsive para el título */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* --- ANIMACIONES DE ENTRADA --- */
+
+/* Estado inicial: oculto y un poco más abajo */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  visibility: hidden;
+}
+
+/* Estado activo: cuando el usuario llega al elemento */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* Variación para que aparezcan uno tras otro (delay) */
+.delay-1 { transition-delay: 0.2s; }
+.delay-2 { transition-delay: 0.4s; }
+.delay-3 { transition-delay: 0.6s; }
+
+/* ======================
+   CATALOGO
+====================== */
+
+#catalogo {
+  padding: 60px 40px;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
+  background-opacity: 0.05;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* ======================
+   CARD PRODUCTO
+====================== */
+
+.card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform .3s, box-shadow .3s;
+  /* Cambio: Aseguramos que todas las tarjetas midan lo mismo en altura */
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  background: linear-gradient(145deg, #1a1a1a, #111111); /* Gradiente sutil */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  position: relative; /* Para que el resplandor no se salga */
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- ESTILO PARA COMPUTADOR (Base) --- */
+.card-img-wrapper {
+  width: 100%;
+  height: 250px; /* Tu altura original */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141414;
+}
+
+.card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* En PC se ve bien el zoom */
+  transition: transform 0.5s ease;
+}
+
+
+
+.card:hover .card-img-wrapper img {
+  transform: scale(1.1); /* Zoom suave al pasar el mouse */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+  display: block;
+}
+
+/* Cambio: Espaciado interno para el texto de la tarjeta */
+.card-body {
+  padding: 20px;
+  flex-grow: 1; /* Empuja el precio hacia abajo si hay títulos largos */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  /* Brillo dorado suave alrededor de toda la tarjeta */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 20px rgba(201, 164, 76, 0.2);
+  border-color: rgba(201, 164, 76, 0.5);
+}
+
+/* Añadimos un destello de luz interno */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 50%; height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.05), transparent);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  left: 100%; /* El destello cruza la tarjeta al pasar el mouse */
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.card span {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ======================
+   MODAL
+====================== */
+
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+  background: #0f0f0f;
+  width: 95%; /* Un poco más ancho para dar aire */
+  max-width: 1100px;
+  max-height: 90vh; /* Evita que el modal se salga de la pantalla */
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr; /* Ajuste de proporciones */
+  gap: 30px; /* Reducido un poco para dar más espacio al contenido */
+  padding: 50px; /* Más padding para que el contenido respire */
+  position: relative;
+  overflow-y: auto; /* Permite scroll si el contenido es muy largo en móviles */
+}
+
+
+/* cerrar */
+.close-btn {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.close-btn:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ======================
+   MODAL IMAGENES
+====================== */
+
+.modal-img-container {
+  position: relative; /* Necesario para posicionar las fotos pequeñas dentro */
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-img-container img {
+  height: 450px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Efecto de zoom en la imagen principal del modal */
+.modal-img-container {
+    overflow: hidden; /* Corta el exceso del zoom */
+    cursor: zoom-in;
+}
+
+.main-img {
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.modal-img-container:hover .main-img {
+    transform: scale(1.2); /* Zoom elegante al pasar el mouse */
+}
+
+.thumbs {
+  position: absolute;
+  bottom: 20px; /* Las coloca abajo */
+  left: 50%;
+  transform: translateX(-50%); /* Las centra horizontalmente */
+  display: flex;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.4); /* Fondo oscuro para que se vean mejor */
+  padding: 10px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.thumbs img {
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  object-fit: cover;
+  opacity: 0.5;
+  border: 2px solid transparent;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.thumbs img:hover,
+.thumbs img.active {
+  opacity: 1;
+  border-color: var(--gold);
+  transform: scale(1.08);
+}
+
+/* ======================
+   MODAL INFO
+====================== */
+
+/* MODAL INFO - Distribución mejorada */
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra la info verticalmente para que no se vea amontonada arriba */
+}
+
+.modal-info .cat {
+  color: var(--gold);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.modal-info h2 {
+  font-size: 36px; /* Un poco más grande para jerarquía */
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.modal-info p {
+  color: var(--text-muted);
+  margin-bottom: 25px; /* Más espacio bajo la descripción */
+  line-height: 1.6;
+}
+
+.modal-info ul {
+  margin-bottom: 30px; /* Más espacio entre lista y precio */
+  list-style: none; /* Quitamos puntos feos */
+  padding-left: 0;
+}
+
+.modal-info li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Añadir un pequeño punto dorado a la lista */
+.modal-info li::before {
+  content: "•";
+  color: var(--gold);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px; /* Espacio antes del botón */
+  color: #fff;
+}
+
+/* boton whatsapp */
+.btn-wa {
+  display: block;
+  text-align: center;
+  /* Gradiente de oro igual al del logo */
+  background: linear-gradient(to right, #bf953f 20%, #fcf6ba 40%, #b38728 60%, #fcf6ba 80%, #bf953f 100%);
+  background-size: 200% auto;
+  color: #000 !important; /* Texto negro para que resalte sobre el oro */
+  padding: 18px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .4s;
+  border: none;
+  cursor: pointer;
+  /* Aplicamos la misma animación de brillo que tiene el header */
+  animation: shineGold 4s linear infinite;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.btn-wa:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(201, 164, 76, 0.4);
+  filter: brightness(1.1);
+}
+
+/* ======================
+   FILTROS
+====================== */
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.filtros button {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.filtros button:hover,
+.filtros button.activo {
+  background: var(--gold);
+  color: #000;
+}
+/* =========================================
+   FILTROS ORGANIZADOS EN CUADRÍCULA (MÓVIL)
+   ========================================= */
+
+@media (max-width: 768px) {
+    /* Convertimos el contenedor en una rejilla organizada */
+    .filtros {
+        display: grid !important;
+        /* Esto crea 2 columnas exactas de igual tamaño */
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 10px !important;
+        padding: 15px !important;
+        max-width: 500px;
+        margin: 0 auto !important; /* Centra todo el bloque de filtros */
+    }
+
+    .filtros button {
+        all: unset !important; /* Limpiamos estilos de navegador */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(201, 164, 76, 0.2) !important;
+        color: #c9a44c !important;
+        padding: 10px 5px !important;
+        border-radius: 8px !important; /* Esquinas apenas redondeadas para seriedad */
+        font-size: 13px !important;
+        text-align: center !important;
+        transition: 0.3s all ease;
+        cursor: pointer !important;
+    }
+
+    /* Botón activo resalta sin desordenar */
+    .filtros button.activo {
+        background: #c9a44c !important;
+        color: #000 !important;
+        border-color: #c9a44c !important;
+        font-weight: 600 !important;
+    }
+
+    /* Estilo del número (10), (1), etc. */
+    .count-badge {
+        margin-left: 5px;
+        font-size: 11px;
+        opacity: 0.7;
+    }
+
+    /* El botón "Todos" puede ocupar las dos columnas para resaltar */
+    .filtros button:first-child {
+        grid-column: span 2 !important;
+        font-weight: bold;
+    }
+}
+
+/* ======================
+   FOOTER
+====================== */
+
+/* --- ESTILOS PARA QUE EL FOOTER SEA VISIBLE --- */
+.footer-premium {
+  background: #080808; 
+  padding: 80px 8% 30px;
+  border-top: 1px solid rgba(201, 164, 76, 0.3);
+  color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  transition: all 0.4s ease;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Efecto Glow en el logo del Footer */
+.footer-logo:hover {
+  color: #fff;
+  text-shadow: 0 0 15px rgba(201, 164, 76, 0.8), 0 0 30px rgba(201, 164, 76, 0.4);
+  transform: translateY(-3px);
+}
+
+.footer-logo span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-left: 5px;
+}
+
+.footer-title {
+  color: #c9a44c;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.footer-text {
+  color: #e0e0e0; /* Blanco grisáceo para lectura suave */
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c9a44c;
+  padding-left: 5px;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.8rem;
+  color: #777;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media (max-width: 900px) {
+  /* =========================================
+     CORRECCIÓN MODAL EN MÓVIL
+     ========================================= */
+  .modal-content {
+    grid-template-columns: 1fr;
+    padding: 20px 16px;
+    gap: 20px;
+    max-height: 95vh;
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  /* Imagen principal: altura fija para que no se deforme */
+  .modal-img-container {
+    overflow: hidden;
+    border-radius: 12px;
+    height: 300px;
+    cursor: zoom-in;
+  }
+
+  .modal-img-container img.main-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  /* Miniaturas: salen del posicionamiento absoluto y van DEBAJO de la imagen */
+  .thumbs {
+    position: static;       /* Quita el absolute que las superponía */
+    transform: none;        /* Quita el translateX(-50%) */
+    left: auto;
+    bottom: auto;
+    justify-content: center;
+    margin-top: 12px;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;       /* Scroll horizontal si hay muchas fotos */
+  }
+
+  .thumbs img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+  }
+
+  /* Info del modal: texto más compacto */
+  .modal-info h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .modal-info p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .price {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .cantidad-selector {
+    margin: 12px 0;
+  }
+
+  /* Botones más fáciles de tocar en móvil */
+  .btn-add-cart,
+  .btn-wa,
+  .btn-add-cart-moderno {
+    padding: 14px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra pequeño (360px - iPhone SE) */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 16px 12px;
+  }
+
+  .modal-img-container,
+  .modal-img-container img.main-img {
+    height: 220px;
+  }
+
+  .thumbs img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .modal-info h2 {
+    font-size: 20px;
+  }
+}
+
+/* ======================
+   BARRA DE PROGRESO
+====================== */
+
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  position: fixed;
+  top: 90px; /* Ajusta según la altura de tu header */
+  left: 0;
+  z-index: 9999;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--gold);
+  width: 0%;
+  box-shadow: 0 0 10px var(--gold);
+  transition: width 0.1s ease;
+}
+
+/* ======================
+   BOTON DE WHATSAPP FLOTANTE
+====================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #bf953f, #b38728); /* Oro para encajar con tu marca */
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  z-index: 5000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* El efecto de pulso circular */
+.whatsapp-float::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #c9a44c;
+  opacity: 0.7;
+  animation: pulse-gold 2s infinite;
+  z-index: -1;
+}
+
+@keyframes pulse-gold {
+  0% { transform: scale(1); opacity: 0.7; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Etiqueta de texto que aparece al pasar el mouse */
+.tooltip-wa {
+  position: absolute;
+  right: 75px;
+  background: #1a1a1a;
+  color: var(--gold);
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  border: 1px solid var(--gold);
+}
+
+.whatsapp-float:hover .tooltip-wa {
+  opacity: 1;
+  visibility: visible;
+  right: 85px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1) translateY(-5px);
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(201, 164, 76, 0.4);
+}
+
+/* Ajuste para móviles: un poco más pequeño para no tapar contenido */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+}
+
+/* ======================
+  Preloader
+====================== */
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  background: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.preloader-content {
+  text-align: center;
+}
+
+.logo-preloader {
+  font-family: 'Playfair Display', serif; /* O la que uses en tu header */
+  color: #c9a44c;
+  font-size: 2.5rem;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  animation: fadePulse 1.5s infinite ease-in-out;
+}
+
+.preloader-bar {
+  width: 150px;
+  height: 2px;
+  background: rgba(201, 164, 76, 0.2);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.preloader-bar::after {
+  content: "";
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #c9a44c;
+  animation: loadingBar 1.5s infinite linear;
+}
+
+@keyframes fadePulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.98); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes loadingBar {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+.img-preloader {
+    width: 200px; /* Tamaño ajustable */
+    height: auto;
+    display: block;
+    margin: 0 auto 30px auto;
+    animation: logoPulse 2.5s infinite ease-in-out;
+}
+
+@keyframes logoPulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.05); opacity: 1; }
+}
+
+/* Estilo para el logo en el Preloader */
+.logo-preloader {
+    font-family: 'Playfair Display', serif; /* Asegúrate de tener esta fuente o la que uses */
+    color: #c9a44c;
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    position: relative;
+    overflow: hidden;
+    /* Efecto de brillo */
+    background: linear-gradient(
+        to right, 
+        #c9a44c 0%, 
+        #fceabb 25%, 
+        #c9a44c 50%, 
+        #fceabb 75%, 
+        #c9a44c 100%
+    );
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+    text-align: center;
+}
+
+/* Animación del movimiento de luz */
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Ajuste de la barra para que no sea tan brusca */
+.preloader-bar {
+    width: 150px;
+    height: 1px; /* Más delgada se ve más elegante */
+    background: rgba(201, 164, 76, 0.1);
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.preloader-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #c9a44c;
+    animation: loading-bar 2s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes loading-bar {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* ======================
+  CONTADOR PARA EL MODAL PRODUCTOS
+====================== */
+
+.cantidad-selector {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gold);
+  border-radius: 5px;
+}
+.counter button {
+  background: transparent;
+  color: var(--gold);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.counter span {
+  padding: 0 15px;
+  min-width: 30px;
+  text-align: center;
+}
+
+/* ======================
+  BOTON PARA AGREGAR AL CARRITO
+====================== */
+
+/* ======================
+   CARRITO PANEL LATERAL
+====================== */
+
+.carrito-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 10001; /* Un nivel arriba del header */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.carrito-content {
+  width: 100%;
+  max-width: 400px;
+  background: var(--bg-main);
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--gold);
+  box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+  animation: slideLeft 0.4s ease-out;
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.carrito-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(201, 164, 76, 0.2);
+  padding-bottom: 15px;
+}
+
+.close-cart-btn {
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.carrito-lista {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.carrito-item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: var(--bg-card);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.item-name {
+  display: block;
+  font-weight: bold;
+  color: var(--text-main);
+}
+
+.item-price {
+  font-size: 0.85rem;
+  color: var(--gold);
+}
+
+.delete-item {
+  background: rgba(255, 68, 68, 0.2);
+  color: #ff4444;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carrito-footer {
+  padding-top: 20px;
+  border-top: 1px solid rgba(201, 164, 76, 0.2);
+}
+
+.total-box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-finalizar-wa {
+  width: 100%;
+  padding: 15px;
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-add-cart.success {
+  background-color: #27ae60 !important;
+  color: white;
+}
+/* Estilo para la notificación flotante */
+.toast-aviso {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #c9a44c;
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  z-index: 100000;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+/* Botón cuando ya se agregó */
+.btn-add-cart.agregado {
+  background: #27ae60 !important;
+  color: white;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.total-tag {
+  color: var(--gold);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* =========================================
+   BOTÓN CARRITO EN HEADER (Estilo Joya)
+   ========================================= */
+.btn-carrito {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(201, 164, 76, 0.3);
+  color: var(--gold);
+  padding: 10px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-carrito:hover {
+  background: var(--gold);
+  color: #000;
+  box-shadow: 0 0 20px rgba(201, 164, 76, 0.4);
+  transform: translateY(-2px);
+}
+
+.carrito-badge {
+  background: #ff4757; /* Un rojo vibrante para que resalte */
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  height: 18px;
+  min-width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  animation: popBadge 0.3s ease;
+}
+
+@keyframes popBadge {
+  0% { transform: scale(0.5); }
+  100% { transform: scale(1); }
+}
+
+/* =========================================
+   BOTÓN AGREGAR EN MODAL (Estilo Premium)
+   ========================================= */
+.btn-add-cart {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: transparent;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.btn-add-cart:hover {
+  background: var(--gold);
+  color: #000;
+  box-shadow: 0 5px 15px rgba(201, 164, 76, 0.3);
+}
+
+.btn-add-cart.success {
+  background: #27ae60 !important;
+  border-color: #27ae60 !important;
+  color: white !important;
+}
+
+/* Efecto de aviso tipo Toast */
+.aviso-toast {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #27ae60;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translate(-50%, 10px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+/* =========================================
+   CARRITO EN HEADER (ESTILO JOYERÍA)
+   ========================================= */
+.btn-carrito {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(201, 164, 76, 0.4) !important;
+  color: var(--gold) !important;
+  padding: 10px 18px !important;
+  border-radius: 50px !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  outline: none;
+}
+
+.btn-carrito:hover {
+  background: var(--gold) !important;
+  color: #000 !important;
+  box-shadow: 0 0 20px rgba(201, 164, 76, 0.4);
+  transform: translateY(-2px);
+}
+
+.carrito-badge {
+  background: #ff4757 !important;
+  color: white !important;
+  font-size: 11px !important;
+  font-weight: bold !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50% !important;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border: 2px solid #000;
+  padding: 0 4px;
+}
+
+/* =========================================
+   BOTONES DEL MODAL (CARRITO Y WHATSAPP)
+   ========================================= */
+.modal-actions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* El botón de agregar al carrito (Estilo elegante) */
+.btn-add-cart-moderno {
+  width: 100%;
+  padding: 16px;
+  background: transparent !important;
+  color: var(--gold) !important;
+  border: 1px solid var(--gold) !important;
+  border-radius: 8px !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-add-cart-moderno:hover {
+  background: rgba(201, 164, 76, 0.1) !important;
+}
+
+/* Estado de éxito cuando se agrega */
+.btn-add-cart-moderno.success {
+  background: #27ae60 !important;
+  border-color: #27ae60 !important;
+  color: white !important;
+}
+
+/* Aviso Toast debajo de los botones */
+.aviso-toast-interno {
+  background: rgba(201, 164, 76, 0.1);
+  color: var(--gold);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(201, 164, 76, 0.3);
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  animation: fadeIn 0.4s ease;
+}
+
+/* =========================================
+   CARRITO PANEL LATERAL (LAYOUT)
+   ========================================= */
+/* =========================================
+   RESETEO Y ESTILO DEL BOTÓN MODERNIZADO
+   ========================================= */
+
+/* Apuntamos exactamente a la clase de tu imagen */
+.btn-carrito-moderno {
+    all: unset; /* Esto borra el cuadro blanco/celeste feo */
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    margin-right: 20px; /* Espacio con el borde */
+}
+
+/* El contenedor del icono */
+.btn-carrito-moderno .icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c9a44c !important; /* Dorado */
+    font-size: 1.5rem;
+    filter: drop-shadow(0 0 5px rgba(201, 164, 76, 0.4));
+}
+
+.btn-carrito-moderno:hover .icon-wrapper {
+    transform: scale(1.1);
+    color: #fcf6ba !important; /* Dorado más brillante al pasar el mouse */
+}
+
+/* El Badge rojo con el número */
+.carrito-count-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #ff4757 !important; /* Rojo vibrante */
+    color: white !important;
+    font-size: 11px !important;
+    font-weight: bold;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    border: 1.5px solid #0b0b0b; /* Borde oscuro para que resalte */
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Animación de entrada para el badge */
+.animate-pop {
+    animation: popBadge 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popBadge {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+/* Estilo para el ícono de la bolsa de compras */
+.fa-shopping-bag {
+    color: #c9a44c !important;
+}
+
+@keyframes bounce-badge {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+.animate-pop {
+  animation: bounce-badge 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Ajuste de productos en cuadrícula para móviles */
+@media (max-width: 480px) {
+    /* El contenedor de las tarjetas */
+    #catalogo .container {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* Fuerza 2 columnas */
+        gap: 12px !important;
+        padding: 10px !important;
+    }
+
+    /* Ajuste de textos en las tarjetas para que no se amontonen */
+    .card .card-body h3 {
+        font-size: 0.85rem !important;
+        margin-bottom: 5px !important;
+        /* Limita a dos líneas de texto si el nombre es muy largo */
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .card .card-body span {
+        font-size: 0.8rem !important;
+        font-weight: bold;
+        color: #c9a44c;
+    }
+
+    /* Imágenes con esquinas más suaves */
+    .card-img-wrapper img {
+        border-radius: 12px 12px 0 0 !important;
+    }
+}
+
+
+
+.card-producto img {
+  width: 100%;
+  height: 300px; /* O el tamaño que prefieras */
+  object-fit: contain; /* Esto hace que la foto se ajuste sin cortarse ni estirarse */
+  background-color: white; /* Si la silla tiene fondo blanco, esto unifica todo */
+}
+
+
+/* --- CONTENEDOR DEL BUSCADOR (CORREGIDO) --- */
+.search-container {
+  max-width: 450px; /* Un poco más ancho para que quepa bien el texto de ejemplo */
+  margin: 30px auto; /* Centrado y con aire arriba/abajo */
+  position: relative; /* VITAL para posicionar la lupa dentro */
+  display: flex;
+  align-items: center;
+}
+
+/* --- EL INPUT (LA BARRA) --- */
+.search-container input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #c9a44c; /* Dorado de Arte y Diseño */
+  color: white;
+  padding: 12px 20px; /* Más padding izquierdo para la lupa */
+  padding-left: 45px; /* Espacio exacto para que el texto no pise la lupa */
+  border-radius: 25px; /* Bordes redondeados y suaves */
+  outline: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al hacer foco en la barra */
+.search-container input:focus {
+  box-shadow: 0 0 10px rgba(201, 164, 76, 0.3);
+  border-color: #eedca5; /* Un dorado más brillante */
+}
+
+/* --- LA LUPA (ICONO) --- */
+.search-container i {
+  position: absolute; /* Se posiciona RELATIVO al contenedor */
+  left: 15px; /* Ajuste fino desde la izquierda */
+  color: #c9a44c; /* Vuelve a ser dorada como tu marca */
+  font-size: 1.1rem;
+  pointer-events: none; /* Para que el clic pase a través e interactúe con el input */
+}
+
+/* Paginación numerada */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.pagination button {
+  background: #1a1a1a;
+  color: #c9a44c;
+  border: 1px solid #c9a44c;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pagination button.active {
+  background: #c9a44c;
+  color: black;
+}
+
+.pagination button:hover {
+  background: #c9a44c;
+  color: black;
+}
