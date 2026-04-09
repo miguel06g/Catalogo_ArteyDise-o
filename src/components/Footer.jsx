@@ -23,8 +23,8 @@ export default function Footer() {
         {/* Sección de Contacto */}
         <div className="footer-box">
           <h3 className="footer-title">Contacto</h3>
-          <p className="footer-text">📍 Medellín, Colombia</p>
-          <p className="footer-text">📞 +57 300 000 0000</p>
+          <p className="footer-text">📍 Bogota, Colombia</p>
+          <p className="footer-text">📞 +57 312 4733 733</p>
           <p className="footer-text">✉️ info@arteydiseno.com</p>
         </div>
       </div>

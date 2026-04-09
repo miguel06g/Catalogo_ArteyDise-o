@@ -613,16 +613,15 @@ header nav a:hover {
     /* Convertimos el contenedor en una rejilla organizada */
     .filtros {
         display: grid !important;
-        /* Esto crea 2 columnas exactas de igual tamaño */
         grid-template-columns: repeat(2, 1fr) !important; 
         gap: 10px !important;
         padding: 15px !important;
         max-width: 500px;
-        margin: 0 auto !important; /* Centra todo el bloque de filtros */
+        margin: 0 auto !important;
     }
 
     .filtros button {
-        all: unset !important; /* Limpiamos estilos de navegador */
+        all: unset !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
@@ -630,14 +629,13 @@ header nav a:hover {
         border: 1px solid rgba(201, 164, 76, 0.2) !important;
         color: #c9a44c !important;
         padding: 10px 5px !important;
-        border-radius: 8px !important; /* Esquinas apenas redondeadas para seriedad */
+        border-radius: 8px !important;
         font-size: 13px !important;
         text-align: center !important;
         transition: 0.3s all ease;
         cursor: pointer !important;
     }
 
-    /* Botón activo resalta sin desordenar */
     .filtros button.activo {
         background: #c9a44c !important;
         color: #000 !important;
@@ -645,17 +643,41 @@ header nav a:hover {
         font-weight: 600 !important;
     }
 
-    /* Estilo del número (10), (1), etc. */
     .count-badge {
         margin-left: 5px;
         font-size: 11px;
         opacity: 0.7;
     }
 
-    /* El botón "Todos" puede ocupar las dos columnas para resaltar */
     .filtros button:first-child {
         grid-column: span 2 !important;
         font-weight: bold;
+    }
+
+    /* ✅ FIX HEADER MÓVIL */
+    header {
+        padding: 14px 5%;
+    }
+
+    .brand-icon {
+        font-size: 1.4rem;
+        margin-right: 8px;
+    }
+
+    .brand-main {
+        font-size: 16px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+    }
+
+    .brand-sub {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    header nav a {
+        font-size: 12px;
+        letter-spacing: 1px;
     }
 }
 
@@ -752,77 +774,112 @@ header nav a:hover {
 /* ======================
    RESPONSIVE
 ====================== */
-
 @media (max-width: 900px) {
-  /* =========================================
-     CORRECCIÓN MODAL EN MÓVIL
-     ========================================= */
   .modal-content {
     grid-template-columns: 1fr;
-    padding: 20px 16px;
-    gap: 20px;
+    padding: 45px 16px 20px 16px;
+    gap: 16px;
     max-height: 95vh;
-    width: 100%;
+    width: 92%;
     border-radius: 16px;
+    overflow-y: auto;
   }
 
-  /* Imagen principal: altura fija para que no se deforme */
-  .modal-img-container {
-    overflow: hidden;
-    border-radius: 12px;
-    height: 300px;
-    cursor: zoom-in;
-  }
-
-  .modal-img-container img.main-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-
-  /* Miniaturas: salen del posicionamiento absoluto y van DEBAJO de la imagen */
-  .thumbs {
-    position: static;       /* Quita el absolute que las superponía */
-    transform: none;        /* Quita el translateX(-50%) */
-    left: auto;
-    bottom: auto;
+  .close-btn {
+    position: sticky !important;
+    top: 0;
+    right: 0;
+    float: right;
+    font-size: 28px;
+    z-index: 9999;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex !important;
+    align-items: center;
     justify-content: center;
-    margin-top: 12px;
-    padding: 8px;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 12px;
-    flex-wrap: nowrap;
-    overflow-x: auto;       /* Scroll horizontal si hay muchas fotos */
+    margin-bottom: 8px;
+    opacity: 1 !important;
+  }
+
+  /* ✅ FIX CLAVE: el contenedor NO corta nada */
+  .modal-img-container {
+    overflow: visible !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    cursor: default !important;
+  }
+
+  /* ✅ Solo la imagen principal tiene altura fija */
+  .modal-img-container img.main-img {
+    width: 100% !important;
+    height: 280px !important;
+    object-fit: contain !important; /* ✅ muestra la imagen completa sin recortar */
+    border-radius: 12px !important;
+    
+    display: block !important;
+  }
+  
+
+  /* ✅ Miniaturas completamente visibles */
+  .thumbs {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    bottom: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    gap: 8px !important;
+    padding: 10px 6px !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    scrollbar-width: none !important;
+  }
+
+  .thumbs::-webkit-scrollbar {
+    display: none !important;
   }
 
   .thumbs img {
-    width: 60px;
-    height: 60px;
-    flex-shrink: 0;
+    width: 55px !important;
+    height: 55px !important;
+    min-width: 55px !important;
+    flex-shrink: 0 !important;
+    border-radius: 8px !important;
+    opacity: 0.5 !important;
+    border: 2px solid transparent !important;
+    object-fit: cover !important;
   }
 
-  /* Info del modal: texto más compacto */
+  .thumbs img.active {
+    opacity: 1 !important;
+    border-color: #c9a44c !important;
+  }
+
   .modal-info h2 {
-    font-size: 24px;
-    margin-bottom: 12px;
+    font-size: 22px;
+    margin-bottom: 10px;
   }
 
   .modal-info p {
     font-size: 14px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   .price {
-    font-size: 24px;
-    margin-bottom: 16px;
+    font-size: 22px;
+    margin-bottom: 14px;
   }
 
-  .cantidad-selector {
-    margin: 12px 0;
-  }
-
-  /* Botones más fáciles de tocar en móvil */
   .btn-add-cart,
   .btn-wa,
   .btn-add-cart-moderno {
@@ -830,14 +887,12 @@ header nav a:hover {
     font-size: 0.9rem;
   }
 }
-
-/* Extra pequeño (360px - iPhone SE) */
 @media (max-width: 480px) {
+  /* MODAL */
   .modal-content {
     padding: 16px 12px;
   }
 
-  .modal-img-container,
   .modal-img-container img.main-img {
     height: 220px;
   }
@@ -850,8 +905,41 @@ header nav a:hover {
   .modal-info h2 {
     font-size: 20px;
   }
-}
 
+  /* TARJETAS */
+  #catalogo .container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    padding: 10px !important;
+  }
+
+  .card .card-body h3 {
+    font-size: 0.85rem !important;
+    margin-bottom: 5px !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card .card-body span {
+    font-size: 0.8rem !important;
+    font-weight: bold;
+    color: #c9a44c;
+  }
+
+  .card-img-wrapper {
+    height: 140px !important;
+    background-color: transparent !important; /* ✅ sin fondo blanco */
+  }
+
+  .card-img-wrapper img {
+    object-fit: contain !important;
+    mix-blend-mode: multiply !important; /* ✅ elimina el fondo blanco de la imagen */
+    border-radius: 12px 12px 0 0 !important;
+  }
+}
 /* ======================
    BARRA DE PROGRESO
 ====================== */
@@ -1536,38 +1624,6 @@ header nav a:hover {
   animation: bounce-badge 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Ajuste de productos en cuadrícula para móviles */
-@media (max-width: 480px) {
-    /* El contenedor de las tarjetas */
-    #catalogo .container {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important; /* Fuerza 2 columnas */
-        gap: 12px !important;
-        padding: 10px !important;
-    }
-
-    /* Ajuste de textos en las tarjetas para que no se amontonen */
-    .card .card-body h3 {
-        font-size: 0.85rem !important;
-        margin-bottom: 5px !important;
-        /* Limita a dos líneas de texto si el nombre es muy largo */
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-
-    .card .card-body span {
-        font-size: 0.8rem !important;
-        font-weight: bold;
-        color: #c9a44c;
-    }
-
-    /* Imágenes con esquinas más suaves */
-    .card-img-wrapper img {
-        border-radius: 12px 12px 0 0 !important;
-    }
-}
 
 
 
