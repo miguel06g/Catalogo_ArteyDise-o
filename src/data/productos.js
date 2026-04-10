@@ -843,26 +843,224 @@ export const productos = [
     ]
   },
 
+  
   {
     id: 49,
-    nombre: "silla gondola",
+    nombre: "Silla Bali",
     cat: "Sillas",
     precio: "",
-    desc: "La Silla Góndola es una celebración de la forma y la materia en su estado más puro. Inspirada en los clásicos del diseño escandinavo, esta pieza destaca por una estructura fluida donde el respaldo y los apoyabrazos se fusionan en una sola línea continua de madera maciza. Es la elección perfecta para quienes buscan un mobiliario con alma artesanal que aporte serenidad, calidez y una ergonomía excepcional a cualquier comedor o espacio de diseño.",
+    desc: "",
     detalles: `
-      <ul>
-        <li>Diseño compacto</li>
-        <li>Madera natural</li>
-        <li>Acabado suave</li>
-      </ul>
+      
     `,
     imgs: [
-      "/sillas catalogo/gondola-sillas/gondola-1.jpg",
-      "/sillas catalogo/gondola-sillas/gondola-2.jpg",
-      "/sillas catalogo/gondola-sillas/gondola-3.jpg",
-      "/sillas catalogo/gondola-sillas/gondola-4.jpg",
+      "/sillas catalogo/bali-sillas/bali-1.jpg",
+      "/sillas catalogo/bali-sillas/bali-2.jpg",
+      "/sillas catalogo/bali-sillas/bali-3.jpg",
+      "/sillas catalogo/bali-sillas/bali-4.jpg",
+
      
     ]
   },
+  {
+    id: 50,
+    nombre: "Silla Bali especial ",
+    cat: "Sillas",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+    imgs: [
+      "/sillas catalogo/bali-especial-sillas/bali-especial-1.jpg",
+      "/sillas catalogo/bali-especial-sillas/bali-especial-2.jpg",
+      "/sillas catalogo/bali-especial-sillas/bali-especial-3.jpg",
+      "/sillas catalogo/bali-especial-sillas/bali-especial-4.jpg",
+
+
+    ]
+  },
+  {
+    id: 51,
+    nombre: "Silla Roben",
+    cat: "Sillas",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+    imgs: [
+      "/sillas catalogo/roben-sillas/roben-1.jpg",
+      "/sillas catalogo/roben-sillas/roben-2.jpg",
+      "/sillas catalogo/roben-sillas/roben-3.jpg",
+      "/sillas catalogo/roben-sillas/roben-4.jpg",
+
+
+    ]
+  },
+  {
+    id: 52,
+    nombre: "Silla de barra Miranda",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/miranda-sillas-barra/miranda-barra-1.jpg",
+      "/sillas catalogo/miranda-sillas-barra/miranda-barra-2.jpg",
+      "/sillas catalogo/miranda-sillas-barra/miranda-barra-3.jpg",
+      "/sillas catalogo/miranda-sillas-barra/miranda-barra-4.jpg",
+
+
+    ]
+  },
+  {
+  id: 53,
+    nombre: "Silla de barra Verona",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/verona-sillas-barra/verona-barra-1.jpg",
+      "/sillas catalogo/verona-sillas-barra/verona-barra-2.jpg",
+      "/sillas catalogo/verona-sillas-barra/verona-barra-3.jpg",
+      "/sillas catalogo/verona-sillas-barra/verona-barra-4.jpg",
+
+
+    ]
+  },
+  {
+  id: 54,
+    nombre: "Silla de barra Gondola",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/gondola-sillas-barra/gondola-barra-1.jpg",
+      "/sillas catalogo/gondola-sillas-barra/gondola-barra-2.jpg",
+      "/sillas catalogo/gondola-sillas-barra/gondola-barra-3.jpg",
+      "/sillas catalogo/gondola-sillas-barra/gondola-barra-4.jpg",
+
+
+    ]
+  },
+  {
+  id: 55,
+    nombre: "Silla de barra Odesa especial",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/odesa-especial-sillas-barra/odesa-especial-barra-1.jpg",
+      "/sillas catalogo/odesa-especial-sillas-barra/odesa-especial-barra-2.jpg",
+      "/sillas catalogo/odesa-especial-sillas-barra/odesa-especial-barra-3.jpg",
+      "/sillas catalogo/odesa-especial-sillas-barra/odesa-especial-barra-4.jpg",
+
+
+    ]
+  },
+  {
+  id: 56,
+    nombre: "Silla de barra Zientte",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/zientte-sillas-barra/zientte-barra-1.jpg",
+      "/sillas catalogo/zientte-sillas-barra/zientte-barra-2.jpg",
+      "/sillas catalogo/zientte-sillas-barra/zientte-barra-3.jpg",
+      "/sillas catalogo/zientte-sillas-barra/zientte-barra-4.jpg",
+
+
+    ]
+  },
+  {
+  id: 57,
+    nombre: "Silla de barra Stork",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/stork-sillas-barra/stork-barra-1.jpg",
+      "/sillas catalogo/stork-sillas-barra/stork-barra-2.jpg",
+      "/sillas catalogo/stork-sillas-barra/stork-barra-3.jpg",
+      "/sillas catalogo/stork-sillas-barra/stork-barra-4.jpg",
+
+
+    ]
+  },
+  {
+  id: 58,
+    nombre: "Silla de barra Frack",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/frack-sillas-barra/frack-barra-1.jpg",
+      "/sillas catalogo/frack-sillas-barra/frack-barra-2.jpg",
+      "/sillas catalogo/frack-sillas-barra/frack-barra-3.jpg",
+      "/sillas catalogo/frack-sillas-barra/frack-barra-4.jpg",
+
+
+    ]
+  },
+  {
+  id: 59,
+    nombre: "Silla de barra Swing",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/swing-sillas-barra/swing-barra-1.jpg",
+      "/sillas catalogo/swing-sillas-barra/swing-barra-2.jpg",
+      "/sillas catalogo/swing-sillas-barra/swing-barra-3.jpg",
+      "/sillas catalogo/swing-sillas-barra/swing-barra-4.jpg",
+
+
+    ]
+  },
+  {
+  id: 60,
+    nombre: "Silla de barra Cabaret",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/cabaret-sillas-barra/cabaret-barra-1.jpg",
+      "/sillas catalogo/cabaret-sillas-barra/cabaret-barra-2.jpg",
+      "/sillas catalogo/cabaret-sillas-barra/cabaret-barra-3.jpg",
+      "/sillas catalogo/cabaret-sillas-barra/cabaret-barra-4.jpg",
+
+
+    ]
+  },
+
+  
 
 ];
