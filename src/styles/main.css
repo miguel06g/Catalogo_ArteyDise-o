@@ -930,15 +930,22 @@ header nav a:hover {
   }
 
   .card-img-wrapper {
-    height: 140px !important;
-    background-color: transparent !important; /* ✅ sin fondo blanco */
+    height: 130px !important;
+    background-color: #fff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 12px 12px 0 0 !important;
+    overflow: hidden !important;
   }
 
   .card-img-wrapper img {
-    object-fit: contain !important;
-    mix-blend-mode: multiply !important; /* ✅ elimina el fondo blanco de la imagen */
-    border-radius: 12px 12px 0 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 0 !important;
   }
+
 }
 /* ======================
    BARRA DE PROGRESO
