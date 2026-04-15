@@ -849,7 +849,7 @@ export const productos = [
     nombre: "Silla Bali",
     cat: "Sillas",
     precio: "",
-    desc: "",
+    desc: "La Silla Bali destaca por su diseño de líneas suaves y orgánicas que invitan al descanso. Su estructura combina una base robusta de madera con un asiento tapizado de alta calidad, logrando el equilibrio perfecto entre calidez artesanal y estilo moderno.",
     detalles: `
       
     `,
@@ -867,7 +867,7 @@ export const productos = [
     nombre: "Silla Bali especial ",
     cat: "Sillas",
     precio: "",
-    desc: "",
+    desc: "La Silla Bali Especial eleva el concepto de confort con un diseño más audaz y detalles arquitectónicos. Se distingue por su respaldo abierto y envolvente que crea un juego de siluetas único, ideal para ambientes que buscan una pieza de acento con personalidad propia.",
     detalles: `
 
     `,
@@ -885,7 +885,7 @@ export const productos = [
     nombre: "Silla Roben",
     cat: "Sillas",
     precio: "",
-    desc: "",
+    desc: "La Silla Roben es la definición de elegancia funcional. Con una silueta esbelta y equilibrada, este diseño destaca por el detalle de madera expuesta en la parte superior del respaldo, un sello de distinción que resalta su fabricación artesanal. Es la pieza ideal para quienes buscan un estilo limpio pero con detalles de alto valor estético.",
     detalles: `
 
     `,
@@ -903,7 +903,7 @@ export const productos = [
     nombre: "Silla de barra Miranda",
     cat: "Sillas de barra",
     precio: "",
-    desc: "",
+    desc: "La Silla de barra Miranda es una pieza que celebra la belleza de la madera en su estado más puro. Diseñada para espacios de barra o cocinas tipo isla, destaca por su respaldo curvo de madera sólida que ofrece un apoyo ergonómico y un aspecto visualmente ligero. Su estructura firme y sus acabados artesanales la convierten en un elemento esencial para ambientes acogedores y modernos.",
     detalles: `
 
     `,
@@ -921,7 +921,7 @@ export const productos = [
     nombre: "Silla de barra Verona",
     cat: "Sillas de barra",
     precio: "",
-    desc: "",
+    desc: "La Silla de barra Verona fusiona la calidez de la madera con el detalle clásico del tejido en fibra natural, creando una pieza de diseño ligero y atemporal. Su respaldo en malla tipo esterilla no solo aporta una estética bohemia y refinada, sino que también ofrece una frescura excepcional, ideal para crear ambientes relajados pero elegantes en barras y cocinas modernas.",
     detalles: `
 
     `,
@@ -939,7 +939,7 @@ export const productos = [
     nombre: "Silla de barra Gondola",
     cat: "Sillas de barra",
     precio: "",
-    desc: "",
+    desc: "La Silla de barra Gondola destaca por su diseño de líneas continuas y envolventes que rinden homenaje al mobiliario clásico de mediados de siglo con un toque contemporáneo. Su respaldo curvo se integra armoniosamente a la estructura, ofreciendo no solo un soporte ergonómico superior, sino también una silueta elegante que se convierte en el centro de atención de cualquier barra o isla de cocina.",
     detalles: `
 
     `,
@@ -957,7 +957,7 @@ export const productos = [
     nombre: "Silla de barra Odesa especial",
     cat: "Sillas de barra",
     precio: "",
-    desc: "",
+    desc: "La Silla de barra Odesa especial es una pieza de diseño vanguardista que combina la calidez de la madera laminada con un confort excepcional. Su respaldo abierto y envolvente es una declaración de estilo que aporta ligereza visual y una estética -Mid-Century Modern- a cualquier barra o isla de cocina. Es la opción ideal para quienes buscan un mobiliario con carácter y sofisticación.",
     detalles: `
 
     `,
@@ -975,7 +975,7 @@ export const productos = [
     nombre: "Silla de barra Zientte",
     cat: "Sillas de barra",
     precio: "",
-    desc: "",
+    desc: "La Silla de barra Zientte redefine el lujo artesanal con una estructura imponente y detallada. Su diseño se caracteriza por un juego de líneas verticales de madera que crean un efecto visual rítmico y sofisticado, convirtiéndola no solo en un asiento, sino en una pieza de acento arquitectónico para barras de alto nivel.",
     detalles: `
 
     `,
