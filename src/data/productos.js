@@ -993,7 +993,7 @@ export const productos = [
     nombre: "Silla de barra Stork",
     cat: "Sillas de barra",
     precio: "",
-    desc: "",
+    desc: "La Silla de barra Stork (Cigüeña) hace honor a su nombre a través de una estructura de madera esbelta y estilizada que desafía lo convencional. Su diseño se caracteriza por el cruce dinámico de sus patas en forma de X, proporcionando una estabilidad excepcional con una estética moderna y arquitectónica que eleva el nivel de cualquier barra o isla.",
     detalles: `
 
     `,
@@ -1011,7 +1011,7 @@ export const productos = [
     nombre: "Silla de barra Frack",
     cat: "Sillas de barra",
     precio: "",
-    desc: "",
+    desc: "La Silla de barra Frack es la personificación de la sofisticación minimalista. Inspirada en la sobriedad y el porte de una prenda de etiqueta, esta pieza combina una estructura de madera oscura con líneas fluidas y un respaldo abierto que aporta ligereza visual, convirtiéndola en el complemento ideal para ambientes de lujo, cocinas modernas o barras con un concepto upscale.",
     detalles: `
 
     `,
@@ -1029,7 +1029,7 @@ export const productos = [
     nombre: "Silla de barra Swing",
     cat: "Sillas de barra",
     precio: "",
-    desc: "",
+    desc: "La Silla de barra Swing es una oda a la simplicidad bien ejecutada. Inspirada en el diseño clásico Windsor pero con un giro contemporáneo, esta pieza destaca por su respaldo de varillas estilizadas que crean un juego visual de luces y sombras, aportando una sensación de frescura y movimiento a cualquier barra o desayunador.",
     detalles: `
 
     `,
@@ -1047,7 +1047,7 @@ export const productos = [
     nombre: "Silla de barra Cabaret",
     cat: "Sillas de barra",
     precio: "",
-    desc: "",
+    desc: "La silla Cabaret destaca por un diseño contemporáneo y sofisticado que combina calidez natural con un toque moderno y funcional. Su estructura está pensada para ofrecer el máximo confort sin sacrificar la elegancia en espacios de barra o mostradores altos.",
     detalles: `
 
     `,
@@ -1060,6 +1060,434 @@ export const productos = [
 
     ]
   },
+  {
+  id: 61,
+    nombre: "Silla de barra Minotti",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "La silla de barra Minotti es la definición de elegancia atemporal y confort ergonómico. Con una estética que evoca el diseño moderno de mediados de siglo, esta pieza combina materiales nobles para crear un ambiente de lujo y calidez en cualquier barra o mostrador.",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/minotti-sillas-barra/minotti-barra-1.jpg",
+      "/sillas catalogo/minotti-sillas-barra/minotti-barra-2.jpg",
+      "/sillas catalogo/minotti-sillas-barra/minotti-barra-3.jpg",
+      "/sillas catalogo/minotti-sillas-barra/minotti-barra-4.jpg",
+
+
+    ]
+  },
+   {
+  id: 62,
+    nombre: "Silla de barra Saga",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "La silla Saga es una pieza que rinde homenaje al minimalismo nórdico, destacando por su pureza de líneas y el uso protagónico de la madera. Es la elección perfecta para quienes buscan un diseño funcional que aporte calidez y una estética limpia a espacios modernos.",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/saga-sillas-barra/saga-barra-1.jpg",
+      "/sillas catalogo/saga-sillas-barra/saga-barra-2.jpg",
+      "/sillas catalogo/saga-sillas-barra/saga-barra-3.jpg",
+      "/sillas catalogo/saga-sillas-barra/saga-barra-4.jpg",
+    ]
+  },
+
+  
+   {
+  id: 63,
+    nombre: "Silla de barra Saga especial",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "La versión Especial de la línea Saga eleva el concepto de diseño orgánico al añadir texturas suaves y acabados premium. Es una pieza que equilibra perfectamente la calidez de la madera con el confort de un asiento tapizado, ideal para ambientes que buscan un lujo sutil y moderno.",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/saga-especial-sillas-barra/saga-especial-barra-1.jpg",
+      "/sillas catalogo/saga-especial-sillas-barra/saga-especial-barra-2.jpg",
+      "/sillas catalogo/saga-especial-sillas-barra/saga-especial-barra-3.jpg",
+      "/sillas catalogo/saga-especial-sillas-barra/saga-especial-barra-4.jpg",
+    ]
+  },
+
+   {
+  id: 64,
+    nombre: "Silla auxiliar Vianca brazo corto",
+    cat: "Sillas auxiliar de sala",
+    precio: "",
+    desc: "La silla Vianca es una pieza de mobiliario que redefine el confort a través de un diseño de líneas orgánicas y volúmenes generosos. Su estética moderna y refinada la convierte en el complemento ideal para salas de estar que buscan un equilibrio entre lujo y funcionalidad.",
+    detalles: `
+
+    `,
+     imgs: [
+      "/sillas catalogo/vianca-brazo-corto-sillas-Aux/vianca-brazo-corto-aux-1.jpg",
+      "/sillas catalogo/vianca-brazo-corto-sillas-Aux/vianca-brazo-corto-aux-2.jpg",
+      "/sillas catalogo/vianca-brazo-corto-sillas-Aux/vianca-brazo-corto-aux-3.jpg",
+      "/sillas catalogo/vianca-brazo-corto-sillas-Aux/vianca-brazo-corto-aux-4.jpg",
+    ]
+  },
+
+   {
+  id: 65,
+    nombre: "Silla auxiliar eames especial",
+    cat: "Sillas auxiliar de sala",
+    precio: "",
+    desc: "Esta pieza es una reinterpretación magistral del diseño clásico, enfocada en la ergonomía avanzada y la calidez de los materiales naturales. Es una silla que no solo sirve como asiento, sino como un elemento decorativo de alto impacto para salas de estar o estudios modernos.",
+    detalles: `
+
+    `,
+     imgs: [
+           "/sillas catalogo/eames-especial-sillas-Aux/eames-especial-aux-1.jpg",
+           "/sillas catalogo/eames-especial-sillas-Aux/eames-especial-aux-2.jpg",
+           "/sillas catalogo/eames-especial-sillas-Aux/eames-especial-aux-3.jpg",
+           "/sillas catalogo/eames-especial-sillas-Aux/eames-especial-aux-4.jpg",
+    ]
+  },
+
+   {
+  id: 66,
+    nombre: "Silla auxiliar Francais",
+    cat: "Sillas auxiliar de sala",
+    precio: "",
+    desc: "La silla Francais es una pieza de diseño envolvente y gran presencia visual, que combina la robustez de una estructura de alta calidad con la suavidad de un tapizado premium. Su silueta redondeada y acabados de lujo la convierten en la protagonista de cualquier rincón de descanso o zona de conversación.",
+    detalles: `
+
+    `,
+     imgs: [
+           "/sillas catalogo/francais-sillas-Aux/francais-aux-1.jpg",
+           "/sillas catalogo/francais-sillas-Aux/francais-aux-2.jpg",
+           "/sillas catalogo/francais-sillas-Aux/francais-aux-3.jpg",
+           "/sillas catalogo/francais-sillas-Aux/francais-aux-4.jpg",
+    ]
+  },
+
+   {
+  id: 67,
+    nombre: "Silla auxiliar vianca",
+    cat: "Sillas auxiliar de sala",
+    precio: "",
+    desc: "La silla Vianca destaca por su silueta escultural y envolvente, diseñada para ofrecer una experiencia de confort superior con una estética contemporánea y limpia. Su diseño se caracteriza por volúmenes suaves que fluyen de manera natural, convirtiéndola en un elemento central de sofisticación para cualquier sala.",
+    detalles: `
+
+    `,
+     imgs: [
+           "/sillas catalogo/vianca-sillas-Aux/vianca-aux-1.jpg",
+           "/sillas catalogo/vianca-sillas-Aux/vianca-aux-2.jpg",
+           "/sillas catalogo/vianca-sillas-Aux/vianca-aux-3.jpg",
+           "/sillas catalogo/vianca-sillas-Aux/vianca-aux-4.jpg",
+
+
+    ]
+  },
+
+   {
+  id: 68,
+    nombre: "Silla auxiliar Eames",
+    cat: "Sillas auxiliar de sala",
+    precio: "",
+    desc: "La silla auxiliar Eames es un referente del diseño moderno, conocida por su silueta escultural y ergonómica. Su estructura fluida no solo es visualmente atractiva, sino que está diseñada para ofrecer una experiencia de descanso excepcional en ambientes de sala o áreas de recepción.",
+    detalles: `
+
+    `,
+     imgs: [
+           "/sillas catalogo/eames-sillas-Aux/eames-aux-1.jpg",
+           "/sillas catalogo/eames-sillas-Aux/eames-aux-2.jpg",
+           "/sillas catalogo/eames-sillas-Aux/eames-aux-3.jpg",
+           "/sillas catalogo/eames-sillas-Aux/eames-aux-4.jpg",
+
+
+    ]
+  },
+
+   {
+  id: 69,
+    nombre: "Silla auxiliar minotti",
+    cat: "Sillas auxiliar de sala",
+    precio: "",
+    desc: "La silla Minotti es una declaración de estilo y sofisticación, diseñada con una silueta robusta pero refinada que invita al descanso prolongado. Su estética imponente la hace ideal para ser el punto focal en salas de estar de alto nivel o suites principales.",
+    detalles: `
+
+    `,
+     imgs: [
+           "/sillas catalogo/minotti-sillas-Aux/minotti-aux-1.jpg",
+           "/sillas catalogo/minotti-sillas-Aux/minotti-aux-2.jpg",
+           "/sillas catalogo/minotti-sillas-Aux/minotti-aux-3.jpg",
+           "/sillas catalogo/minotti-sillas-Aux/minotti-aux-4.jpg",
+    ]
+  },
+
+   {
+  id: 70,
+    nombre: "Silla auxiliar cristopher",
+    cat: "Sillas auxiliar de sala",
+    precio: "",
+    desc: "La silla Cristopher es una pieza imponente que destaca por su respaldo alto y silueta arquitectónica. Su diseño está pensado para ofrecer una presencia distinguida en salones principales, bibliotecas o zonas de recepción donde se busque proyectar seriedad y confort premium.",
+    detalles: `
+
+    `,
+     imgs: [
+           "/sillas catalogo/cristopher-sillas-Aux/cristopher-aux-1.jpg",
+           "/sillas catalogo/cristopher-sillas-Aux/cristopher-aux-2.jpg",
+           "/sillas catalogo/cristopher-sillas-Aux/cristopher-aux-3.jpg",
+           "/sillas catalogo/cristopher-sillas-Aux/cristopher-aux-4.jpg",
+    ]
+  },
+
+   {
+  id: 71,
+    nombre: "Silla auxiliar kare",
+    cat: "Sillas auxiliar de sala",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+           "/sillas catalogo/kare-sillas-Aux/kare-aux-1.jpg",
+           "/sillas catalogo/kare-sillas-Aux/kare-aux-2.jpg",
+           "/sillas catalogo/kare-sillas-Aux/kare-aux-3.jpg",
+           "/sillas catalogo/kare-sillas-Aux/kare-aux-4.jpg",
+    ]
+  },
+
+   {
+  id: 72,
+    nombre: "Silla auxiliar odesa especial",
+    cat: "Sillas auxiliar de sala",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+           "/sillas catalogo/odesa-especial-sillas-Aux/odesa-especial-aux-1.jpg",
+           "/sillas catalogo/odesa-especial-sillas-Aux/odesa-especial-aux-2.jpg",
+           "/sillas catalogo/odesa-especial-sillas-Aux/odesa-especial-aux-3.jpg",
+           "/sillas catalogo/odesa-especial-sillas-Aux/odesa-especial-aux-4.jpg",
+    ]
+  },
+
+  {
+  id: 73,
+    nombre: "Silla auxiliar bali",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+           "/sillas catalogo/bali-sillas-Aux/bali-aux-1.jpg",
+           "/sillas catalogo/bali-sillas-Aux/bali-aux-2.jpg",
+           "/sillas catalogo/bali-sillas-Aux/bali-aux-3.jpg",
+           "/sillas catalogo/bali-sillas-Aux/bali-aux-4.jpg",
+
+
+    ]
+  },
+  {
+  id: 74,
+    nombre: "Silla auxiliar gondola",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+           "/sillas catalogo/gondola-sillas-Aux/gondola-aux-1.jpg",
+           "/sillas catalogo/gondola-sillas-Aux/gondola-aux-2.jpg",
+           "/sillas catalogo/gondola-sillas-Aux/gondola-aux-3.jpg",
+           "/sillas catalogo/gondola-sillas-Aux/gondola-aux-4.jpg",
+
+
+    ]
+  },
+  {
+  id: 75,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+  {
+  id: 76,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+  {
+  id: 77,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+  {
+  id: 78,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+  {
+  id: 79,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+  {
+  id: 80,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+  {
+  id: 81,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+
+  {
+  id: 82,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+  {
+  id: 83,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+  {
+  id: 84,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+  {
+  id: 85,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+  {
+  id: 86,
+    nombre: "Silla ",
+    cat: "Sillas de barra",
+    precio: "",
+    desc: "",
+    detalles: `
+
+    `,
+     imgs: [
+      
+
+
+    ]
+  },
+
 
   
 
