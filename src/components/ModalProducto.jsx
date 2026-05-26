@@ -64,7 +64,7 @@ export default function ModalProducto({ producto, cerrar }) {
   // WHATSAPP (MANTENIENDO TU LÓGICA ORIGINAL)
   // =============================
   const generarMensaje = () => {
-    const numero = "573124733733";
+    const numero = "573142701632";
 
     const lineas = [
       "👋 Hola, buen día.",
@@ -73,10 +73,7 @@ export default function ModalProducto({ producto, cerrar }) {
       "",
       `🪑 *Producto:* ${producto.nombre}`,
       `📦 *Cantidad:* ${cantidad} unidad(es)`,
-      `💰 *Precio unitario:* ${producto.precio}`,
-      `✅ *Total estimado:* ${total}`,
       "",
-      `🖼️ *Referencia:* ${activa}`,
       "",
       `🤝 ${catMsg.cierre}`,
       "¡Gracias!",

@@ -17,10 +17,10 @@ export default function Carrito({ cerrar }) {
   };
 
 const enviarWhatsApp = () => {
-  const numero = "573124733733";
+  const numero = "573142701632";
 
   const lineas = [
-    "👋 *¡Hola! Arte y Diseño CC S.A.S*",
+    "👋 *¡Hola! Arte y Diseño *",
     "Me gustaría recibir una cotización de estos productos:",
     ""
   ];
@@ -28,13 +28,13 @@ const enviarWhatsApp = () => {
   carrito.forEach((prod, i) => {
     lineas.push(`${i + 1}. 🪑 *${prod.nombre}*`);
     lineas.push(`   📦 Cantidad: ${prod.cantidad}`);
-    lineas.push(`   💰 Precio: ${prod.precio}`);
+    // lineas.push(`   💰 Precio: ${prod.precio}`);
     lineas.push("");
   });
 
-  lineas.push("-----------------------");
-  lineas.push(`💰 *TOTAL ESTIMADO:* ${calcularTotal()}`);
-  lineas.push("-----------------------");
+  //lineas.push("-----------------------");
+  //lineas.push(`💰 *TOTAL ESTIMADO:* ${calcularTotal()}`);
+  //lineas.push("-----------------------");
   lineas.push("");
   lineas.push("📋 ¿Me podrían confirmar disponibilidad y tiempo de entrega?");
   lineas.push("¡Muchas gracias!");
