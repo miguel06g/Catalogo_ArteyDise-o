@@ -29,7 +29,7 @@ export default function Layout({ children }) {
         <Carrito cerrar={() => setCarritoVisible(false)} />
       )}
 
-      <a href="https://wa.me/573124733733" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/573142701632?text=Hola,%20me%20gustaría%20cotizar%20un%20producto" className="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-whatsapp"></i>
         <span className="tooltip-wa">Cotizar ahora</span>
       </a>
